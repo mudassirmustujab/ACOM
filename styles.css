@@ -1,0 +1,77 @@
+
+nav{
+    font-family: 'Roboto', sans-serif;
+}
+
+.navbar-brand{
+    font-family: 'IBM Plex Serif', serif;
+    font-size: 8vh;
+    color: #efa765;
+}
+
+.navbar-toggler{
+    outline: 1px white!important;
+}
+nav li{
+    font-size: 3vh!important;
+}
+
+.navbar-brand img{
+    height: 3.5rem;
+    width:  3.5rem;
+    border-color: #efa765!important;
+    
+}
+
+
+.home{
+   border-bottom: #efa765 3px solid!important;
+}
+
+.navbar-nav .home:hover{
+    color:#FFA41B!important;
+}
+
+.navbar-nav img{
+    height: 1.5rem;
+    width:  1.5rem;
+}
+
+.sec1{
+    height: auto;
+    background-image: url("img/taylor-vick-M5tzZtFCOfs-unsplash.jpg");
+    background-size: cover;
+    background-color: gray;
+    background-blend-mode: multiply;
+    
+}
+
+.text {
+    color:#efa765;
+    text-align: center;
+  }
+.text h1{
+    width: 50vh!important; ;
+    font-size: 10vh;
+    font-family: 'IBM Plex Serif', serif;
+
+}
+
+.text p{
+    width: 50vh!important;
+}
+
+.text a{
+    width: 40vh!important;
+}
+
+.dropdown-item:hover{
+    background-color: transparent!important;
+    color: white;
+}
+/* 
+@media screen and(min-width:768px) and (max-width:) {
+    .sec1 h1{
+
+    }
+} */
