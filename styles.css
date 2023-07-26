@@ -1,6 +1,9 @@
+*{
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Roboto', sans-serif;
 
-nav{
-    font-family: 'Roboto', sans-serif;
 }
 
 .navbar-brand{
@@ -9,12 +12,6 @@ nav{
     color: #efa765;
 }
 
-.navbar-toggler{
-    outline: 1px white!important;
-}
-nav li{
-    font-size: 3vh!important;
-}
 
 .navbar-brand img{
     height: 3.5rem;
@@ -23,13 +20,24 @@ nav li{
     
 }
 
+.navbar-toggler{
+    outline: 1px white!important;
+    height: 13vh!important;
+}
+nav li{
+    font-size: 2.5vh!important;
+}
+.navbar-nav .home a:hover{
+    color:#efa765!important;
 
-.home{
-   border-bottom: #efa765 3px solid!important;
 }
 
-.navbar-nav .home:hover{
-    color:#FFA41B!important;
+.navbar-nav .nav-item a:hover{
+    color:#efa765!important;
+}
+
+.home{
+    border-bottom: #efa765 3px solid!important;
 }
 
 .navbar-nav img{
@@ -38,20 +46,26 @@ nav li{
 }
 
 .sec1{
-    height: auto;
+    height:auto;
     background-image: url("img/taylor-vick-M5tzZtFCOfs-unsplash.jpg");
     background-size: cover;
-    background-color: gray;
+    background-color: rgb(255, 255, 255);
     background-blend-mode: multiply;
     
 }
 
+.container-xl .row{
+}
+
+.container-xl .row .col-12{
+ 
+}
 .text {
     color:#efa765;
     text-align: center;
   }
 .text h1{
-    width: 50vh!important; ;
+    width: 70vh!important; ;
     font-size: 10vh;
     font-family: 'IBM Plex Serif', serif;
 
@@ -65,13 +79,49 @@ nav li{
     width: 40vh!important;
 }
 
-.dropdown-item:hover{
-    background-color: transparent!important;
-    color: white;
-}
-/* 
-@media screen and(min-width:768px) and (max-width:) {
-    .sec1 h1{
+button {
+    --c:  #efa765; /* the color*/
+    
+    box-shadow: 0 0 0 .1em inset var(--c); 
+    --_g: linear-gradient(var(--c) 0 0) no-repeat;
+    background: 
+      var(--_g) calc(var(--_p,0%) - 100%) 0%,
+      var(--_g) calc(200% - var(--_p,0%)) 0%,
+      var(--_g) calc(var(--_p,0%) - 100%) 100%,
+      var(--_g) calc(200% - var(--_p,0%)) 100%;
+    background-size: 50.5% calc(var(--_p,0%)/2 + .5%);
+    outline-offset: .1em;
+    transition: background-size .4s, background-position 0s .4s;
+  }
+  button:hover {
+    --_p: 100%;
+    transition: background-position .4s, background-size 0s;
+  }
+  button:active {
+    box-shadow: 0 0 9e9q inset #0009; 
+    background-color: var(--c);
+    color: #fff;
+  }
+  
+  button {
+    font-size: 3%;
+    cursor: pointer;
+    padding: .1em .6em;
+    border: none;
+    color: rgb(0, 0, 0);
+    border-radius: 0.3em;
+    margin-bottom: 15vh;
+  }
 
-    }
-} */
+  .sec2{
+    height: 90vh;
+    background-color: ghostwhite;
+  }
+
+  .sec3{
+    background-color: ghostwhite;
+  }
+  .sec3 h1{
+    font-size: 10vh;
+    font-family: 'IBM Plex Serif', serif;
+  }
